@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script 요소</title>
+    <h1>스크립트 요소</h1>
+  </head>
+  <body>
+    <button type="button" class="flip-button">카드 뒤집기</button>
+
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-face card-face-black"></div>
+        <div class="card-face card-face-white"></div>
+      </div>
+    </div>
+    <!-- <style>
+      body {
+        margin: 50px;
+      }
+
+      .flip-button {
+        background-color: #485fc7;
+        border-color: transparent;
+        color: #fff;
+        border-width: 1px;
+        border-radius: 8px;
+        cursor: pointer;
+        justify-content: center;
+        padding: 16px;
+        text-align: center;
+        white-space: nowrap;
+        font-weight: 700;
+      }
+
+      .card-wrapper {
+        width: 750px;
+        height: 400px;
+        margin: 40px 0;
+        perspective: 600px;
+      }
+
+      .card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+        transition: transform 1s;
+      }
+
+      .card.is-flipped {
+        transform: translateX(-100%) rotateY(-180deg);
+      }
+
+      .card-face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+
+      .card-face-black {
+        border: 2px solid #000;
+        background: url('/assets/thumbnail/likelion-black.png');
+      }
+
+      .card-face-white {
+        border: 2px solid #aaa;
+        background: url('../assets/thumbnail/likelion-white.png');
+        transform: rotateY(180deg);
+      }
+    </style> -->
+    <!-- <script type="module">
+      // DOM 선택 부분
+      const flipButton = document.querySelector('.flip-button');
+      const card = document.querySelector('.card');
+
+      // 함수 구현 부분
+      const toggleCardFlip = () => {
+        card.classList.toggle('is-flipped');
+      };
+
+      // 이벤트 바인딩 부분
+      flipButton.addEventListener('click', toggleCardFlip);
+    </script> -->
+    <script src="/src/html/js/23-script.js"></script>
+    <!-- 스크립트는 바디요소가 끝나기 전에 들어가야 함 -->
+    <!-- 들어가려면 모듈이나 디퍼 추가 -->
+  </body>
+</html>

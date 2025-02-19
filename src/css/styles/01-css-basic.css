@@ -1,0 +1,10 @@
+/* body 요소의 배경색상 지정 */
+body {
+  background-color: yellow;
+  color: rgba(0, 0, 255, 0.5);
+  /* 컬러는 글자색변경 rgb뒤에 a알파는 투명도*/
+  /* rgb(0 0 255 /0.5)이렇게도 가능함 */
+  font-family: Arial, Helvetica, sans-serif;
+  /* Georgia, ('Times New Roman', Times, serif) 뒤에 3개는 후순위 */
+  /* 글꼴군 분류 serif(삐침있음), sans-serif */
+}

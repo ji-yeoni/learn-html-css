@@ -10,8 +10,8 @@
     <h2>input 요소</h2>
     <!-- 한 줄 입력서식 -->
     <form action="/" method="post">
-      <!-- / 부분에 폼스프리 사이트에서 만든 계정 넣으면 연동 -->
-      <!-- 메소드는 무조건 포스트로 -->
+      <!-- / 부분에 formspree 사이트에서 만든 계정 넣으면 연동 -->
+      <!-- method는 무조건 post로 -->
       <fieldset>
         <legend>폼 서식</legend>
         <div>
@@ -25,9 +25,9 @@
             maxlength="5"
             minlength="3"
           />
-          <!-- 리콰이어드 = 필수입력서식 , aria-required="true"? -->
-          <!-- 플레이스홀더는 입력 서식 안에 흐린글씨  -->
-          <!-- 플레이스홀더만 쓰고 레이블을 안쓰는 곳이 많음 접근성 떨어짐-->
+          <!-- required = 필수입력서식 , aria-required="true"? -->
+          <!-- placeholder는 입력 서식 안에 흐린글씨  -->
+          <!-- placeholder만 쓰고 label을 안쓰는 곳이 많음 접근성 떨어짐-->
         </div>
         <!-- <div>
           <label for="$">{레이블텍스}</label>
