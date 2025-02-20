@@ -1,0 +1,72 @@
+body {
+  background-color: beige;
+}
+
+/* 태그 선택자 */
+/* &:focus{border: 10px solid red;}를 주려면
+(포커스는 폼요소,앵커태그여야 가능) 
+<p tabindex="0"> p태그에 탭인덱스를 넣어주면 가능 */
+p {
+  color: red;
+  &:hover {
+    background: skyblue;
+  }
+  &:focus {
+    border: 10px solid red;
+  }
+}
+/* 클래스 선택자 */
+/* [class="like"]{color: green;} */
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+/* [class="id"]{color: blue;} */
+#lion {
+  color: blue;
+}
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+a[href^="https://"]
+{
+  text-decoration: none;
+}
+a[href$='pdf'] {
+  background: violet;
+}
+/* ""안에 pdf인지 뭔지 구분해서 색만 다르게 하면 구분쉬움 */
+
+/* 가상 클래스 선택자 */
+a:link {
+  color: black;
+}
+/* 한번도 방문하지 않았을 때 하이퍼링크요소 글씨 색상 */
+
+a:visited {
+  color: olive;
+}
+/* 방문한 적이 있을 때 하이퍼링크요소 글씨 색상 */
+
+a:hover {
+  color: blue;
+}
+/* 마우스 올렸을 때 색상 */
+a:focus {
+  color: aqua;
+}
+/* 키보드로 포커스가 갔을 때 색상 */
+a:active {
+  background: #fff;
+}
+/* 클릭했을 때 색상 */
+/* 가상 요소 선택자 */
+/* 가상 요소는 선택 안됨 */
+h1::before {
+  content: '멋사';
+}
+h1::after {
+  content: '13기';
+}

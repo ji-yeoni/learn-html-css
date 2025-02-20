@@ -1,0 +1,35 @@
+body * {
+  margin: 0;
+}
+/* '*'은 전체선택 앞에 body를 붙인다던가 구체화 */
+
+body {
+  color: olive;
+  margin: 0;
+}
+/* 모든 속성이 상속되진 않음 보통 데코역할이 상속됨*/
+h1 {
+  font-size: 1em;
+}
+.ai {
+  background: orange !important;
+}
+body h2 + p {
+  background: yellow;
+}
+body p[class] {
+  background: lime;
+}
+/* 우선순위 규칙 있음 */
+/* !important 우선순위규칙 무시, 어쩌다 동적으로 바꿀때만 사용 */
+#ai {
+  background-color: pink;
+}
+.ai.copilot {
+  border: 10px dotted blue;
+}
+/* .ai.copilot 띄어쓰기 하지 않으면 앤드 조건. 둘다 포함 */
+a {
+  color: inherit;
+}
+/* 앵커태그도 부모색상과 동일하게 */
