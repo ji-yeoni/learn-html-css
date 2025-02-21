@@ -1,0 +1,40 @@
+@import '/src/common/mini-reset.css';
+
+body {
+  margin: 50px;
+}
+
+.lion {
+  border: 1px solid black;
+  background-color: black;
+
+  .like {
+    border: 1px solid red;
+    background-color: yellow;
+    position: relative;
+    height: 50px;
+    top: -5px;
+    left: -5px;
+  }
+}
+/* 부모인 라이언은 그대로, 자식인 라이크는 포지션이 렐러티브라서 동적임. */
+/* 렐러티브 자기자신의 위치를 그대로 두고 이동 */
+/* 앱솔은 내위치까지 가지고 이동 */
+
+.box {
+  position: relative;
+  border: 1px solid blue;
+  height: 100px;
+}
+
+.bootcamp {
+  background-color: aqua;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+h6 {
+  background-color: pink;
+}
+/*   position: absolute; 하면 무조건 블록형식으로 인식 */
