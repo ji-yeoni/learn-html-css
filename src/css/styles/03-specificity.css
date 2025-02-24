@@ -1,7 +1,7 @@
 body * {
   margin: 0;
 }
-/* '*'은 전체선택 앞에 body를 붙인다던가 구체화 */
+/* '*'= 전체선택, 앞에 body를 붙인다던가 구체화 */
 
 body {
   color: olive;

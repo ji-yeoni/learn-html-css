@@ -2,7 +2,7 @@
 /* 배경색상 */
 /* 폰트베리언트 속성으로 대문자 변환 가능했지만 크기가 작은 대문자인 관계로 주석처리 */
 /* 검색을 통해 텍스트 트렌스폼 속성을 알게되었고 대문자로 변환하는 값을 적용함 */
-/* 텍스트트렌스폼 속성을 .멤버스서비스에 선언함으로서 자식요소 모두에 상속되되도록 함 */
+/* 텍스트트렌스폼 속성을 .멤버스서비스에 선언함으로서 자식요소 모두에 상속되도록 함 */
 .member-service {
   background-color: yellow;
   /* font-variant: small-caps; */
@@ -25,20 +25,21 @@
 
 /* a 요소보다 우선순위 */
 .item.first::before {
-  content: "";
+  content: '';
+}
 
-  /* a 요소이면서 가상요소 선택자 */
-  .item::before {
-    content: ':';
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+/* a 요소이면서 가상요소 선택자 */
+.item::before {
+  content: '|';
+  padding-left: 16px;
+  padding-right: 16px;
 }
+
 /* 구조 선택자를 이용할 때 */
-.item:nth-child(n + 2)::before {
+/* .item:nth-child(n + 2)::before {
   background-color: pink;
-  content: ':';
-}
+  content: '|';
+} */
 
 /* UL 요소를 활용한 구조 예시 */
 .member-link {
@@ -64,7 +65,6 @@
     color: inherit;
     padding: 8px;
     background-color: pink;
-  
   }
 
   span {
