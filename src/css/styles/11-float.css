@@ -1,0 +1,40 @@
+@import url(/src/common/theme.css);
+
+/* 플로트 사용하기 */
+.card {
+  background: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail {
+    background: var(--pastel-yellow);
+    /* overflow: hidden; */
+    /* display: flow-root; */
+    /* width: 100%;
+    float: left; */
+     display: flow-root;
+    border: 1px solid red;
+
+
+
+
+
+    img {
+      /* position: relative; */
+      float: left;
+      width: 100px;
+      vertical-align: middle;
+      /* vertical-align: top; 이미지 아래쪽 여백을 없애기 위한 트릭 */
+      /* display: block;이미지 아래쪽 여백을 없애기 위한 트릭 */
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content{
+    /* 플로트 효과를 해제하기 위해 클리어 속성을 사용할 수 있다. */
+    clear: both;
+    background-color: var(--pastel-orange);
+  }
+}
