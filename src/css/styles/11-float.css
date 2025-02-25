@@ -1,5 +1,7 @@
 @import url(/src/common/theme.css);
-
+body{
+  margin: 100px;
+}
 /* 플로트 사용하기 */
 .card {
   background: var(--pastel-pink);
