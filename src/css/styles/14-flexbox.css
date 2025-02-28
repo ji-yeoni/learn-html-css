@@ -71,7 +71,7 @@ body *::after {
     /* flex-basis: 200px;
     flex-basis: 1;
     flex-grow: 0; */
-    /* flex-grow, flex-shrink, flex-basis 속성을을 단축 표기 */
+    /* flex-grow, flex-shrink, flex-basis 속성을 단축 표기 */
     flex: 0 1 150px;
 
     &:nth-child(even) {
